@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+.flex_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex_column {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.app_Background {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -100;
+  height: 100%;
+  width: 100%;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c23eacf8-e366-4118-ab5c-5a1255842a75/de3p08l-1bd58aa6-af04-421c-90cd-004ed6ccfe44.png/v1/fill/w_1192,h_670,q_70,strp/sc_3_6_20190819_221446_2_890j_orbit_hurston_f_by_doomsp0rk_de3p08l-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03MjAiLCJwYXRoIjoiXC9mXC9jMjNlYWNmOC1lMzY2LTQxMTgtYWI1Yy01YTEyNTU4NDJhNzVcL2RlM3AwOGwtMWJkNThhYTYtYWYwNC00MjFjLTkwY2QtMDA0ZWQ2Y2NmZTQ0LnBuZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.4hc5loZHse6DwjCgsnlKHnyUtq5a5DObQKKyfzsNCWE");
+  background-position: center;
+  background-size: cover;
+}
+
+.app_Body {
+  width: 100%;
+}
+
+.app_Header {
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c23eacf8-e366-4118-ab5c-5a1255842a75/de3p08l-1bd58aa6-af04-421c-90cd-004ed6ccfe44.png/v1/fill/w_1192,h_670,q_70,strp/sc_3_6_20190819_221446_2_890j_orbit_hurston_f_by_doomsp0rk_de3p08l-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03MjAiLCJwYXRoIjoiXC9mXC9jMjNlYWNmOC1lMzY2LTQxMTgtYWI1Yy01YTEyNTU4NDJhNzVcL2RlM3AwOGwtMWJkNThhYTYtYWYwNC00MjFjLTkwY2QtMDA0ZWQ2Y2NmZTQ0LnBuZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.4hc5loZHse6DwjCgsnlKHnyUtq5a5DObQKKyfzsNCWE");
+  background-position: center;
+  background-size: cover;
+}
+
+.header_text {
   color: white;
+  height: 300px;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.body_container {
+  width: 100%;
+  background: blue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.body_article {
+  width: 100%;
+}
+
+.article_head {
+  color: white;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c23eacf8-e366-4118-ab5c-5a1255842a75/de3p08l-1bd58aa6-af04-421c-90cd-004ed6ccfe44.png/v1/fill/w_1192,h_670,q_70,strp/sc_3_6_20190819_221446_2_890j_orbit_hurston_f_by_doomsp0rk_de3p08l-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03MjAiLCJwYXRoIjoiXC9mXC9jMjNlYWNmOC1lMzY2LTQxMTgtYWI1Yy01YTEyNTU4NDJhNzVcL2RlM3AwOGwtMWJkNThhYTYtYWYwNC00MjFjLTkwY2QtMDA0ZWQ2Y2NmZTQ0LnBuZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.4hc5loZHse6DwjCgsnlKHnyUtq5a5DObQKKyfzsNCWE");
+  background-position: center;
+  background-size: cover;
+}
+
+.article_content {
+  width: 100%;
+  background: black;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.content_text {
+  width: 90%;
 }
