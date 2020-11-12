@@ -147,10 +147,49 @@ function App() {
               <div className="content_text">
                 <div className="content_grid">
                   <img
-                    src={developerverse.images[2].link}
+                    src={developerverse.images[1].link}
                     alt="developerverse homepage layout overview"
                     className="content_image"
                   ></img>
+                  <p>
+                    <h3>Website Features</h3>
+                    DeveloperVerse has full CRUD functionality, and connects to
+                    an integrated back-end RESTful API using SQL databases. The
+                    front end was developed using React and Node, and
+                    connections between the front and back ends are handled by
+                    Express and Axios requests.
+                    <ul>
+                      <li>
+                        <span style={{ fontWeight: "bold" }}>Projects</span> -
+                        DeveloperVerse displays web development projects created
+                        by its users. Users can explore existing projects and
+                        add new ones through their account.
+                      </li>{" "}
+                      <br />
+                      <li>
+                        <span style={{ fontWeight: "bold" }}>
+                          User Accounts
+                        </span>{" "}
+                        - users must create an account and/or log in if they
+                        want to make changes to the site. Users can only delete
+                        projects that they have added.
+                      </li>
+                      <br />
+                      <li>
+                        <span style={{ fontWeight: "bold" }}>Security</span> -
+                        for extra credit, we implemented basic encryption of
+                        passwords, user names, and so on. Sensitive information
+                        is never stored in plain text.
+                      </li>
+                      <br />
+                    </ul>
+                  </p>
+                </div>
+                <br />
+                <br />
+              </div>
+              <div className="content_text">
+                <div className="content_grid">
                   <p>
                     <h3>90's Retrofuturism</h3>
                     DeveloperVerse draws style elements from the "retrofuturism"
@@ -165,6 +204,11 @@ function App() {
                     output of a Terminal interface and the HTML language that
                     the web is built on.
                   </p>
+                  <img
+                    src={developerverse.images[2].link}
+                    alt="developerverse homepage layout overview"
+                    className="content_image"
+                  ></img>
                 </div>
                 <br />
                 <br />
@@ -284,6 +328,21 @@ function App() {
                         detailed information for a single film when a film is
                         clicked on.
                       </li>
+                      <br />
+                      <li>
+                        <span style={{ fontWeight: "bold" }}>"FilmForm"</span> -
+                        this component renders a modal expanding section
+                        containing a fillable form, allowing users to add a new
+                        film or director to the database from the front end of
+                        the site.
+                      </li>
+                      <br />
+                      <li>
+                        <span style={{ fontWeight: "bold" }}>"Navbar"</span> -
+                        this component renders the site header and navbar, and
+                        houses the interface for the database editor, which
+                        renders the FilmForm subcomponent.
+                      </li>
                     </ul>
                   </p>
                 </div>
@@ -365,18 +424,57 @@ function App() {
                     className="content_image"
                   ></img>
                 </div>
-                <br />
-                <br />
-                <div className="flex_column">
-                  <a
-                    href="https://ga05-pokereact.vercel.app/"
-                    className="button_black"
-                  >
-                    Explore PokéReact
-                  </a>
+              </div>
+              {/* END ARTICLE CONTENT BLOCK */}
+              {/* BEGIN ARTICLE CONTENT BLOCK */}
+              <div className="content_text">
+                <div className="content_grid">
+                  <img
+                    src={pokereact.images[1].link}
+                    alt="developerverse homepage layout overview"
+                    className="content_image"
+                  ></img>
+                  <p>
+                    <h3>React Components</h3>
+                    <ul>
+                      <li>
+                        <span style={{ fontWeight: "bold" }}>"Pokemon"</span> -
+                        this component fetches and renders information on a
+                        single pokemon as determined by the component's props.
+                      </li>
+                      <br />
+                      <li>
+                        <span style={{ fontWeight: "bold" }}>"PokeList"</span> -
+                        this component fetches the list of pokemon species, and
+                        programatically renders a Pokemon subcomponent for each
+                        one. The Pokemon subcomponents are displayed in a grid
+                        using CSS auto rows.
+                      </li>
+                      <br />
+                      <li>
+                        <span style={{ fontWeight: "bold" }}>"PokeDex"</span> -
+                        This component renders a modal overlay that displays
+                        detailed pokemon information when a Pokemon component is
+                        clicked on. Multiple overlays can be rendered
+                        simultaneously - future functionality would implement a
+                        "tab" system, allowing users to compare pokemon.
+                      </li>
+                      <br />
+                    </ul>
+                  </p>
                 </div>
               </div>
               {/* END ARTICLE CONTENT BLOCK */}
+              <br />
+              <br />
+              <div className="flex_column">
+                <a
+                  href="https://ga05-pokereact.vercel.app/"
+                  className="button_black"
+                >
+                  Explore PokéReact
+                </a>
+              </div>
             </div>
           </div>
 
@@ -403,10 +501,13 @@ function App() {
                     "Raindrops" is a simple typing game that presents the player
                     with a sequence of letters. The player must then type in as
                     many words that start with those letters as possible within
-                    the time limit.
+                    the time limit. Raindrops is coded entirely in JavaScript
+                    and is rendered using HTML/DOM manipulation. It also
+                    includes a secondary script that plays audio from a
+                    selection of ambient rain noise videos on youtube.
                   </p>
                   <img
-                    src={raindrops.images[0].link}
+                    src={raindrops.images[1].link}
                     alt="developerverse homepage layout overview"
                     className="content_image"
                   ></img>
