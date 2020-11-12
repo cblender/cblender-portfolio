@@ -55,7 +55,7 @@ p {
 .app_Header {
   background-image: url("./img/tools-wallpaper.jpg");
   background-position: top;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
