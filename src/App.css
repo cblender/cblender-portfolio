@@ -15,11 +15,13 @@ h2 {
 
 h3 {
   font-size: 28px;
+  margin-top: 0px;
 }
 
 p {
   font-size: 18px;
   line-height: 150%;
+  margin: 0px;
 }
 
 .flex_row {
@@ -116,15 +118,27 @@ p {
   padding-bottom: 20px;
 }
 
+.content_image {
+  width: 100%;
+}
+
 .content_text {
   width: 90%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.content_grid {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .button_black {
   background: black;
   width: max-content;
   padding: 20px 50px 20px 50px;
-  border-radius: 4px;
 }
