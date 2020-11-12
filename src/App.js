@@ -60,7 +60,7 @@ function App() {
           <img className="portrait"></img>
           <h1 style={{ color: "black" }}>Chris Blendermann</h1>
           <div className="article_title" style={{ background: "black" }}>
-            <h3 style={{ paddingTop: "20px" }}>Web Design Portfolio</h3>
+            <h3 style={{ marginTop: "28px" }}>Web Design Portfolio</h3>
           </div>
         </div>
         <div className="body_article">
@@ -287,45 +287,46 @@ function App() {
                     </ul>
                   </p>
                 </div>
-                {/* END ARTICLE CONTENT BLOCK */}
-                {/* BEGIN ARTICLE CONTENT BLOCK */}
-                <div className="content_text">
-                  <div className="content_grid">
-                    <p>
-                      <h3>Vertical Development</h3>
-                      One of the benefits of the format of our project was that
-                      each team member could take responsibility for a vertical
-                      slice of development work, by claiming a couple of film
-                      directors to produce content for. For each director, image
-                      and text resources had to be gathered, added to the
-                      database, and programmatically added to the front-end
-                      display. One of my team members led the development of the
-                      back-end services, with myself and our third member
-                      providing task completion, while I led the development of
-                      the front-end design, with my two team members also
-                      pitching in to complete tasks on that side. In the end, we
-                      were satisfied with the distribution of work and felt we
-                      had all had a chance to grow our skills in all areas of
-                      the project's development lifecycle.
-                    </p>
-                    <img
-                      src={mernolith.images[1].link}
-                      alt="developerverse homepage layout overview"
-                      className="content_image"
-                    ></img>
-                  </div>
+              </div>
+
+              {/* END ARTICLE CONTENT BLOCK */}
+              {/* BEGIN ARTICLE CONTENT BLOCK */}
+              <div className="content_text">
+                <div className="content_grid">
+                  <p>
+                    <h3>Vertical Development</h3>
+                    One of the benefits of the format of our project was that
+                    each team member could take responsibility for a vertical
+                    slice of development work, by claiming a couple of film
+                    directors to produce content for. For each director, image
+                    and text resources had to be gathered, added to the
+                    database, and programmatically added to the front-end
+                    display. One of my team members led the development of the
+                    back-end services, with myself and our third member
+                    providing task completion, while I led the development of
+                    the front-end design, with my two team members also pitching
+                    in to complete tasks on that side. In the end, we were
+                    satisfied with the distribution of work and felt we had all
+                    had a chance to grow our skills in all areas of the
+                    project's development lifecycle.
+                  </p>
+                  <img
+                    src={mernolith.images[1].link}
+                    alt="developerverse homepage layout overview"
+                    className="content_image"
+                  ></img>
                 </div>
-                {/* END ARTICLE CONTENT BLOCK */}
-                <br />
-                <br />
-                <div className="flex_column">
-                  <a
-                    href="https://developerverse.netlify.app/"
-                    className="button_black"
-                  >
-                    Explore MERNOLITH
-                  </a>
-                </div>
+              </div>
+              {/* END ARTICLE CONTENT BLOCK */}
+              <br />
+              <br />
+              <div className="flex_column">
+                <a
+                  href="https://cblender.github.io/ga08-mernolith-front/#/"
+                  className="button_black"
+                >
+                  Explore MERNOLITH
+                </a>
               </div>
             </div>
           </div>
@@ -368,7 +369,7 @@ function App() {
                 <br />
                 <div className="flex_column">
                   <a
-                    href="https://developerverse.netlify.app/"
+                    href="https://ga05-pokereact.vercel.app/"
                     className="button_black"
                   >
                     Explore PokéReact
@@ -414,7 +415,7 @@ function App() {
                 <br />
                 <div className="flex_column">
                   <a
-                    href="https://developerverse.netlify.app/"
+                    href="https://cblender.github.io/ga04-raindrops/"
                     className="button_black"
                   >
                     Explore Raindrops
