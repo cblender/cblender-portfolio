@@ -1,3 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+h1 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: normal;
+  font-size: 64px;
+}
+
+h2 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 150%;
+}
+
 .flex_row {
   display: flex;
   flex-direction: row;
@@ -19,7 +43,7 @@
   z-index: -100;
   height: 100%;
   width: 100%;
-  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c23eacf8-e366-4118-ab5c-5a1255842a75/de3p08l-1bd58aa6-af04-421c-90cd-004ed6ccfe44.png/v1/fill/w_1192,h_670,q_70,strp/sc_3_6_20190819_221446_2_890j_orbit_hurston_f_by_doomsp0rk_de3p08l-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03MjAiLCJwYXRoIjoiXC9mXC9jMjNlYWNmOC1lMzY2LTQxMTgtYWI1Yy01YTEyNTU4NDJhNzVcL2RlM3AwOGwtMWJkNThhYTYtYWYwNC00MjFjLTkwY2QtMDA0ZWQ2Y2NmZTQ0LnBuZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.4hc5loZHse6DwjCgsnlKHnyUtq5a5DObQKKyfzsNCWE");
+  background: black;
   background-position: center;
   background-size: cover;
 }
@@ -29,14 +53,25 @@
 }
 
 .app_Header {
-  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c23eacf8-e366-4118-ab5c-5a1255842a75/de3p08l-1bd58aa6-af04-421c-90cd-004ed6ccfe44.png/v1/fill/w_1192,h_670,q_70,strp/sc_3_6_20190819_221446_2_890j_orbit_hurston_f_by_doomsp0rk_de3p08l-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03MjAiLCJwYXRoIjoiXC9mXC9jMjNlYWNmOC1lMzY2LTQxMTgtYWI1Yy01YTEyNTU4NDJhNzVcL2RlM3AwOGwtMWJkNThhYTYtYWYwNC00MjFjLTkwY2QtMDA0ZWQ2Y2NmZTQ0LnBuZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.4hc5loZHse6DwjCgsnlKHnyUtq5a5DObQKKyfzsNCWE");
+  background-image: url("./img/tools-wallpaper.jpg");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.portrait {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  border: 2px solid black;
+  background-image: url("./img/portrait.jpeg");
   background-position: center;
   background-size: cover;
 }
 
 .header_text {
   color: white;
-  height: 300px;
+  height: 600px;
   margin: 0 auto;
 }
 
@@ -52,17 +87,30 @@
 .article_head {
   color: white;
   width: 100%;
-  padding: 20px;
   text-align: center;
 
-  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c23eacf8-e366-4118-ab5c-5a1255842a75/de3p08l-1bd58aa6-af04-421c-90cd-004ed6ccfe44.png/v1/fill/w_1192,h_670,q_70,strp/sc_3_6_20190819_221446_2_890j_orbit_hurston_f_by_doomsp0rk_de3p08l-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03MjAiLCJwYXRoIjoiXC9mXC9jMjNlYWNmOC1lMzY2LTQxMTgtYWI1Yy01YTEyNTU4NDJhNzVcL2RlM3AwOGwtMWJkNThhYTYtYWYwNC00MjFjLTkwY2QtMDA0ZWQ2Y2NmZTQ0LnBuZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.4hc5loZHse6DwjCgsnlKHnyUtq5a5DObQKKyfzsNCWE");
   background-position: center;
   background-size: cover;
+
+  height: 500px;
+}
+
+.article_overlay {
+  position: absolute;
+  width: 100%;
+  height: 360px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.article_title {
+  background: #2d4658;
+  padding-left: 69px;
+  padding-right: 69px;
 }
 
 .article_content {
   width: 100%;
-  background: black;
+  background: #2d4658;
   color: white;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -70,4 +118,13 @@
 
 .content_text {
   width: 90%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.button_black {
+  background: black;
+  width: max-content;
+  padding: 20px 50px 20px 50px;
+  border-radius: 4px;
 }
