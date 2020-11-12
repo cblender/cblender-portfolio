@@ -168,9 +168,14 @@ function App() {
                 </div>
                 <br />
                 <br />
-                <div className="flex_column">
-                  <h3 className="button_black">Explore DeveloperVerse!</h3>
-                </div>
+              </div>
+              <div className="flex_column">
+                <a
+                  href="https://developerverse.netlify.app/"
+                  className="button_black"
+                >
+                  Explore DeveloperVerse
+                </a>
               </div>
             </div>
           </div>
@@ -194,20 +199,20 @@ function App() {
               <div className="content_text">
                 <div className="content_grid">
                   <p>
-                    <h3>MERNOLITH - The M.E.R.N. Monolith</h3>
+                    <h3>MERNOLITH - a M.E.R.N. Monolith</h3>
                     This project was completed for General Assembly's software
                     engineering program. For this project, I was placed on a
-                    team with two of my classmates. Our concept for the project
-                    was to create a working film database site with full RESTful
-                    API functionality, using the "M.E.R.N." development
-                    pipeline. Our project represented a curated repository of
-                    information accessible to the public, and so for our project
-                    name I suggested a twist on the iconic "Monolith" from 2001:
-                    A Space Odyssey - I suggested we go with "MERNOLITH". "MERN"
-                    stands for "MongoDB, Express, React, Node" and is one of the
-                    most commonly used pipelines for JavaScript application
-                    development - it was used for this project, and so the name
-                    stuck.
+                    team with two of my classmates. The goal of the project was
+                    to create a working film database site with full RESTful API
+                    functionality, using the "M.E.R.N." development pipeline.
+                    Our concept was to create a curated cinema database that
+                    displayed information about directors and films to the
+                    public. I suggested we base our project's name on the iconic
+                    "Monolith" from 2001: A Space Odyssey, and so devised the
+                    name "MERNOLITH". "MERN" stands for "MongoDB, Express,
+                    React, Node" and is one of the most commonly used pipelines
+                    for JavaScript application development - it was used for
+                    this project, and so the name stuck.
                     <br />
                     <br />
                     MongoDB is a JavaScript database platform. Express handles
@@ -235,25 +240,93 @@ function App() {
                     className="content_image"
                   ></img>
                   <p>
-                    <h3>Vertical Development</h3>
-                    One of the benefits of the format of our project was that
-                    each team member could take responsibility for a vertical
-                    slice of development work, by claiming a couple of film
-                    directors to produce content for. For each director, image
-                    and text resources had to be gathered, added to the
-                    database, and programmatically added to the front-end
-                    display. One of my team members led the development of the
-                    back-end services, with myself and our third member
-                    providing task completion, while I led the development of
-                    the front-end design, with my two team members also pitching
-                    in to complete tasks on that side. In the end, we were
-                    satisfied with the distribution of work and felt we had all
-                    had a chance to grow our skills in all areas of the
-                    project's development lifecycle.
+                    <h3>React Components</h3>
+                    For this project, we created a number of custom React
+                    components to handle information display, which used Axios
+                    requests to communicate with the back-end database.
+                    <ul>
+                      <li>
+                        <span style={{ fontWeight: "bold" }}>"Director"</span> -
+                        this component fetches and renders information on a
+                        single director as determined by the component's props.
+                      </li>
+                      <br />
+                      <li>
+                        <span style={{ fontWeight: "bold" }}>
+                          "AllDirectors"
+                        </span>{" "}
+                        - the home page renders this components, which takes the
+                        array of directors and renders a Director subcomponent
+                        for each one.
+                      </li>
+                      <br />
+                      <li>
+                        <span style={{ fontWeight: "bold" }}>"Film"</span> -
+                        this component fetches and renders information on a
+                        single film as determined by the component's props.
+                      </li>
+                      <br />
+                      <li>
+                        <span style={{ fontWeight: "bold" }}>
+                          "DirectorFilms"
+                        </span>{" "}
+                        - the page for each director renders this component,
+                        which fetches an array of films produced by the
+                        specified director, and renders a Film subcompnent for
+                        each one.
+                      </li>
+                      <br />
+                      <li>
+                        <span style={{ fontWeight: "bold" }}>
+                          "SelectedFilm"
+                        </span>{" "}
+                        - this component renders a modal overlay which displays
+                        detailed information for a single film when a film is
+                        clicked on.
+                      </li>
+                    </ul>
                   </p>
                 </div>
+                {/* END ARTICLE CONTENT BLOCK */}
+                {/* BEGIN ARTICLE CONTENT BLOCK */}
+                <div className="content_text">
+                  <div className="content_grid">
+                    <p>
+                      <h3>Vertical Development</h3>
+                      One of the benefits of the format of our project was that
+                      each team member could take responsibility for a vertical
+                      slice of development work, by claiming a couple of film
+                      directors to produce content for. For each director, image
+                      and text resources had to be gathered, added to the
+                      database, and programmatically added to the front-end
+                      display. One of my team members led the development of the
+                      back-end services, with myself and our third member
+                      providing task completion, while I led the development of
+                      the front-end design, with my two team members also
+                      pitching in to complete tasks on that side. In the end, we
+                      were satisfied with the distribution of work and felt we
+                      had all had a chance to grow our skills in all areas of
+                      the project's development lifecycle.
+                    </p>
+                    <img
+                      src={mernolith.images[1].link}
+                      alt="developerverse homepage layout overview"
+                      className="content_image"
+                    ></img>
+                  </div>
+                </div>
+                {/* END ARTICLE CONTENT BLOCK */}
+                <br />
+                <br />
+                <div className="flex_column">
+                  <a
+                    href="https://developerverse.netlify.app/"
+                    className="button_black"
+                  >
+                    Explore MERNOLITH
+                  </a>
+                </div>
               </div>
-              {/* END ARTICLE CONTENT BLOCK */}
             </div>
           </div>
 
@@ -268,19 +341,41 @@ function App() {
             >
               <div className="article_banner"></div>
               <div className="article_title">
-                <h2>PokÉ-React</h2>
+                <h2>Poké-React</h2>
               </div>
             </div>
             <div className="article_content flex_column">
+              {/* BEGIN ARTICLE CONTENT BLOCK */}
               <div className="content_text">
-                <h3>TEXT</h3>
+                <div className="content_grid">
+                  <p>
+                    <h3>PokéReact - RESTful API</h3>
+                    This project leverages the Pokemon API using RESTful API
+                    handling. It fetches and displays all 151 pokemon from the
+                    first generation of the games, and allows the user to click
+                    on pokemon to view detailed information within a modal
+                    overlay. The application is built using React on the Node.js
+                    platform, and programatically renders a separate instance of
+                    my custom React component for each pokemon species.
+                  </p>
+                  <img
+                    src={pokereact.images[0].link}
+                    alt="developerverse homepage layout overview"
+                    className="content_image"
+                  ></img>
+                </div>
+                <br />
+                <br />
+                <div className="flex_column">
+                  <a
+                    href="https://developerverse.netlify.app/"
+                    className="button_black"
+                  >
+                    Explore PokéReact
+                  </a>
+                </div>
               </div>
-              <div className="content_image">
-                <h3>TEXT</h3>
-              </div>
-              <div className="content_text">
-                <h3>TEXT</h3>
-              </div>
+              {/* END ARTICLE CONTENT BLOCK */}
             </div>
           </div>
 
@@ -299,15 +394,34 @@ function App() {
               </div>
             </div>
             <div className="article_content flex_column">
+              {/* BEGIN ARTICLE CONTENT BLOCK */}
               <div className="content_text">
-                <h3>TEXT</h3>
+                <div className="content_grid">
+                  <p>
+                    <h3>Raindrops - A Speed Typing Game</h3>
+                    "Raindrops" is a simple typing game that presents the player
+                    with a sequence of letters. The player must then type in as
+                    many words that start with those letters as possible within
+                    the time limit.
+                  </p>
+                  <img
+                    src={raindrops.images[0].link}
+                    alt="developerverse homepage layout overview"
+                    className="content_image"
+                  ></img>
+                </div>
+                <br />
+                <br />
+                <div className="flex_column">
+                  <a
+                    href="https://developerverse.netlify.app/"
+                    className="button_black"
+                  >
+                    Explore Raindrops
+                  </a>
+                </div>
               </div>
-              <div className="content_image">
-                <h3>TEXT</h3>
-              </div>
-              <div className="content_text">
-                <h3>TEXT</h3>
-              </div>
+              {/* END ARTICLE CONTENT BLOCK */}
             </div>
           </div>
         </div>

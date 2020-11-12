@@ -18,6 +18,27 @@ h3 {
   margin-top: 0px;
 }
 
+/* ========================================================= */
+/* BUTTON STYLING */
+
+a {
+  font-size: 21px;
+  color: white;
+  text-decoration: none;
+}
+
+.button_black {
+  width: max-content;
+  padding: 20px 50px 20px 50px;
+  background: black;
+}
+
+.button_black:hover {
+  background: #07151f;
+}
+
+/* ========================================================= */
+
 p {
   font-size: 18px;
   line-height: 150%;
@@ -135,10 +156,4 @@ p {
   grid-template-rows: 1fr;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.button_black {
-  background: black;
-  width: max-content;
-  padding: 20px 50px 20px 50px;
 }
