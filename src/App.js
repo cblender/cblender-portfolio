@@ -114,7 +114,7 @@ function App() {
                 <img></img>
               </div>
               <div className="article_title">
-                <h2>&lt;Developer_Verse/&gt;</h2>
+                <h2>DeveloperVerse</h2>
               </div>
             </div>
 
